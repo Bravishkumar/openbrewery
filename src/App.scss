@@ -1,0 +1,12 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+.brewery-app {
+  margin: 20px;
+  table {
+    thead {
+      tr {
+        background-color: #777777;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
