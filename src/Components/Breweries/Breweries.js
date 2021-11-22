@@ -3,6 +3,7 @@ import BreweriesList from './BreweriesList';
 import dataService from '../../Services/DataService';
 import BreweryDetails from '../BreweryDetails/BreweryDetails';
 import Button from 'react-bootstrap/Button';
+import beer from '../../beer.png';
 
 function Breweries(props) {
     const [breweries, setBreweries] = useState([]);
@@ -24,7 +25,8 @@ function Breweries(props) {
     const backToList = () => {
         setPage('list');
     }
-    return <div className="brewery-app">
+    return <div className="d-flex">
+        <div className="brewery-app">
         {page && page === 'details' &&
             <>
                 <Button onClick={backToList} variant="link">Back to List</Button>
@@ -34,6 +36,7 @@ function Breweries(props) {
         {page && page === 'list' &&
             <BreweriesList breweries={breweries} getDetails={getDetails} />
         }
+        </div>
     </div>
 }
 

@@ -13,7 +13,7 @@ function BreweryLoc(props) {
       zoom: 11
     };
     return (
-        <div style={{ height: '400px', width: '500px' }}>
+        <div style={{ height: '400px', width: '700px' }}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: "AIzaSyBRmxd5im9ODiZRXYHOkmIiONFki0A2qVg" }}
             defaultCenter={defaultProps.center}

@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './App.scss';
-import Breweries from './Components/Breweries/Breweries';
 import reportWebVitals from './reportWebVitals';
+import Layout from './layout';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Breweries />
+    <Layout />
   </React.StrictMode>,
   document.getElementById('root')
 );

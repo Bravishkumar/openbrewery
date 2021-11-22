@@ -1,11 +1,41 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-.brewery-app {
-  margin: 20px;
-  table {
-    thead {
-      tr {
-        background-color: #777777;
-        color: #FFFFFF;
+body {
+  background-color: #F7EFE2;
+  .beer-img {
+    position: fixed;
+    width: 150px;
+    top: 100px;
+    left: 20px;
+  }
+  .App-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    .header-wrapper {
+      background: #cfccc3;
+      box-shadow: 0 1px 6px 0 rgb(32, 33, 36);
+      height: 72px;
+      overflow: hidden;
+      padding: 10px;
+      .app-title {
+        flex-grow: 1;
+        text-align: center;
+        .caption {
+          font-size: 15px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .brewery-app {
+    margin: 90px 50px 20px 130px;
+    table {
+      thead {
+        tr {
+          background-color: #777777;
+          color: #FFFFFF;
+        }
       }
     }
   }
